@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="yoinx/screwd_device_moto_shamu" path="device/moto/shamu" remote="github" revision="Ox" />
+  <project name="yoinx/screwd_kernel_moto_shamu" path="kernel/moto/shamu" remote="github" revision="ElementalX-5.00" />
+  <remove-project name="platform/hardware/qcom/msm8x84" />
+  <project name="yoinx/screwd_platform_hardware_qcom_msm8x84" path="hardware/qcom/msm8x84" remote="github" revision="Ox" />
+  <project name="yoinx/screwd_proprietary_vendor_motorola" path="vendor/moto" remote="github" revision="O" />
+  
+  <!-- 
+		The normal screwd repo holds too much configuration in the device makefiles.
+		This really just needs to replace products/screwd_shamu.mk
+		This also file frees things back up to the device tree and uses a screwd_shamu.mk
+		rather than aosp_shamu.mk  
+  -->
+  
+  <remove-project name="vendor/screwd" />
+  <project name="yoinx/screwd_vendor_screwd" path="vendor/screwd" remote="github" revision="O" />
+</manifest>

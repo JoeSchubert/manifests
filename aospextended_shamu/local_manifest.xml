@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!--
+  <project name="atharvalele/android_device_moto_shamu" path="device/moto/shamu" remote="github" revision="lineage-15.1" />
+  <project name="atharvalele/android_kernel_moto_shamu" path="kernel/moto/shamu" remote="github" revision="lineage-15.1" />
+  -->
+  <project name="yoinx/aex_device_moto_shamu" path="device/moto/shamu" remote="github" revision="Ox" />
+  <project name="yoinx/screwd_kernel_moto_shamu" path="kernel/moto/shamu" remote="github" revision="ElementalX-5.00" />
+  <remove-project name="platform/hardware/qcom/msm8x84" />
+  <project name="yoinx/screwd_platform_hardware_qcom_msm8x84" path="hardware/qcom/msm8x84" remote="github" revision="Ox" />
+  
+  <project name="yoinx/screwd_proprietary_vendor_motorola" path="vendor/moto" remote="github" revision="O" />
+
+</manifest>
